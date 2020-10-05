@@ -74,39 +74,39 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--unit {
-    color: @syntax-other-unit;
+    color: @syntax-other-unit-color;
   }
 }
 
 .syntax--storage {
-  color: @purple;
+  color: @syntax-storage-color;
 }
 
 .syntax--constant {
-  color: @orange;
+  color: @syntax-constant-color;
 
   &.syntax--character.syntax--escape {
-    color: @cyan;
+    color: @syntax-escape-character-color;
   }
 
   &.syntax--numeric {
-    color: @orange;
+    color: @syntax-numbers-color;
   }
 
   &.syntax--other.syntax--color {
-    color: @cyan;
+    color: @syntax-other-syntax-color;
   }
 
   &.syntax--other.syntax--symbol {
-    color: @green;
+    color: @syntax-symbol-color;
   }
 }
 
 .syntax--variable {
-  color: @red;
+  color: @syntax-variable-color;
 
   &.syntax--interpolation {
-    color: darken(@red, 10%);
+    color: @syntax-interpolation-color;
   }
 
   &.syntax--parameter.syntax--function {
@@ -120,67 +120,67 @@ atom-text-editor {
 }
 
 .syntax--string {
-  color: @green;
+  color: @syntax-string-color;
 
 
   &.syntax--regexp {
-    color: @cyan;
+    color: @syntax-reg-expressions-color;
 
     .syntax--source.syntax--ruby.syntax--embedded {
-      color: @orange;
+      color: @syntax-source-ruby-expressions-color;
     }
   }
 
   &.syntax--other.syntax--link {
-    color: @red;
+    color: @syntax-link-color;
   }
 }
 
 .syntax--punctuation {
   &.syntax--definition {
     &.syntax--comment {
-      color: @dimgray;
+      color: @syntax-punctuation-definition-comment-color;
     }
 
     &.syntax--string,
     &.syntax--variable,
     &.syntax--parameters,
     &.syntax--array {
-      color: @syntax-text-color;
+      color: @syntax-string-variable-parameters-array-color;
     }
 
     &.syntax--heading,
     &.syntax--identity {
-      color: @blue;
+      color: @syntax-heading-identity-color;
     }
 
     &.syntax--bold {
-      color: @orange;
+      color: @syntax-bold-color;
       font-weight: bold;
     }
 
     &.syntax--italic {
-      color: @purple;
+      color: @syntax-italic-color;
       font-style: italic;
     }
   }
 
   &.syntax--section.syntax--embedded {
-    color: darken(@red, 10%);
+    color: @syntax-section-embedded-color;
   }
 
 }
 
 .syntax--support {
   &.syntax--class {
-    color: @orange;
+    color: @syntax-support-class-color;
   }
 
   &.syntax--function  {
-    color: @cyan;
+    color: @syntax-function-color;
 
     &.syntax--any-method {
-      color: @blue;
+      color: @syntax-any-method-color;
     }
   }
 }
