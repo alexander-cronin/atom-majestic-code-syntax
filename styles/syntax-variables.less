@@ -1,16 +1,10 @@
-@import "colors";
-
-// General colors
-// @, ,, :, ;, (), "", {}, [], etc.
-@syntax-text-color: @royalblue;
-@syntax-cursor-color: @lime;
-// ??
+@import "new_colors";
 @syntax-selection-color: lighten(@black, 10%);
 @syntax-background-color: @black;
 // Guide colors
 @syntax-wrap-guide-color: @white;
 @syntax-indent-guide-color: @white;
-@syntax-invisible-character-color: @dimgray;
+@syntax-invisible-character-color: @olivedrab;
 // For find and replace markers
 @syntax-result-marker-color: lighten(@black, 10%);
 @syntax-result-marker-color-selected: @yellow;
@@ -18,59 +12,70 @@
 @syntax-gutter-text-color: @white;
 @syntax-gutter-text-color-selected: @lime;
 @syntax-gutter-background-color: lighten(@black, 5%);
-@syntax-gutter-background-color-selected: lighten(@black, 15%);
+@syntax-gutter-background-color-selected: lighten(@black, 20%);
 // For git diff info. i.e. in the gutter
-@syntax-color-renamed: @blue;
+@syntax-color-renamed: @royalblue;
 @syntax-color-added: @lime;
-@syntax-color-modified: @yellow;
+@syntax-color-modified: @orangered;
 @syntax-color-removed: @red;
 // Additional
-@syntax-comment-color: @deepskyblue; //keep
-@syntax-keyword-color: @silver;
-@syntax-control-color: @red;
-@syntax-operator-color: @syntax-text-color;
-@syntax-other-special-method: @green;
-@syntax-other-unit-color: @orange;
-@syntax-storage-color: @green;
-@syntax-constant-color: @orange;
-@syntax-escape-character-color: @cyan;
-@syntax-numbers-color: @orange;
-@syntax-other-syntax-color: @cyan;
-@syntax-symbol-color: @green;
-@syntax-variable-color: @red;
-@syntax-interpolation-color: darken(@red, 10%);
-@syntax-string-color: @red;
-@syntax-reg-expressions-color: @cyan;
-@syntax-source-ruby-expressions-color: @orange;
-@syntax-link-color: @red;
-@syntax-punctuation-definition-comment-color: @dimgray;
-@syntax-string-variable-parameters-array-color: @syntax-text-color;
-@syntax-heading-identity-color: @blue;
-@syntax-bold-color: @orange;
-@syntax-italic-color: @purple;
-@syntax-section-embedded-color: darken(@red, 10%);
-@syntax-support-class-color: @orange;
-@syntax-function-color: @cyan;
-@syntax-any-method-color: @blue;
-//@syntax-placeholder-color: @purple;
-//@syntax-placeholder-color: @purple;
-//@syntax-placeholder-color: @purple;
-//@syntax-placeholder-color: @purple;
-//@syntax-placeholder-color: @purple;
-//@syntax-placeholder-color: @purple;
-//@syntax-placeholder-color: @purple;
-//@syntax-placeholder-color: @purple;
-//@syntax-placeholder-color: @purple;
-//@syntax-placeholder-color: @purple;
-//@syntax-placeholder-color: @purple;
-//@syntax-placeholder-color: @purple;
-//@syntax-placeholder-color: @purple;
-//@syntax-placeholder-color: @purple;
-//@syntax-placeholder-color: @purple;
-//@syntax-placeholder-color: @purple;
-//@syntax-placeholder-color: @purple;
-//@syntax-placeholder-color: @purple;
-//@syntax-placeholder-color: @purple;
-//@syntax-placeholder-color: @purple;
-//@syntax-placeholder-color: @purple;
-//@syntax-placeholder-color: @purple;
+
+// Main Settings:
+@syntax-comment-color: @deepskyblue;
+@syntax-control-color: @lime;
+@syntax-operator-color: @orangered;
+@syntax-storage-color: @coral;
+@syntax-constant-color: @red;
+@syntax-text-color: @royalblue;
+@syntax-cursor-color: @lime;
+@syntax-variable-color: @orange;
+@syntax-numbers-color: @gold;
+@syntax-escape-character-color: @olivedrab;
+@syntax-string-color: @white;
+@syntax-punctuation-definition-comment-color: @orangered;
+@syntax-string-variable-parameters-array-color: @lime;
+@syntax-function-color: @red;
+@syntax-entity-name-function-color: @yellow;
+@syntax-name-section-color: @yellow;
+@syntax-other-attribute-name-color: @lime;
+@syntax-id-color: @red;
+@syntax-link-color: @lime;
+@syntax-meta_syntax-class-color: @red;
+
+/*
+Settings that change shit beyond my comprehension.
+Need more complex code samples to set these with any sanity.
+*/
+
+@syntax-keyword-color: @red; // << ??
+@syntax-other-special-method: @yellow; // << ??
+@syntax-other-unit-color: @olivedrab; // << ??
+@syntax-other-syntax-color: @cyan; // << ??
+@syntax-symbol-color: @yellow; // << ??
+@syntax-interpolation-color: @red; // << ??
+@syntax-reg-expressions-color: @cyan; // << ??
+@syntax-source-ruby-expressions-color: @orange; // << ??
+@syntax-link-color: @red; // << ??
+@syntax-heading-identity-color: @white; // << ??
+@syntax-bold-color: @orange; // << ??
+@syntax-italic-color: @purple; // << ??
+@syntax-section-embedded-color: @red; // << ??
+@syntax-support-class-color: @yellow; // << ??
+@syntax-any-method-color: @yellow; // << ??
+@syntax-name-type-color: @white; // << ??
+@syntax-other-inherited-class-color: @magenta; // << ??
+@syntax-name-class_syntax-name-type-class-color: @gold; // << ??
+@syntax-require-color: @coral; // << ??
+@syntax-selector-color: @cyan; // << ??
+@syntax-seperator-color: @purple; // << ??
+@syntax-seperator-background-color: @black; // << ??
+@syntax-markup_syntax-bold-color: @orange; // << ??
+@syntax-changed-color: @royalblue; // << ??
+@syntax-deleted-color: @red; // << ??
+@syntax-italic-color: @purple; // << ??
+@syntax-heading_syntax-punctuation-syntax-definition-syntax-heading-color: @red; // << ??
+@syntax-inserted-color: @deepskyblue; // << ??
+@syntax-list-color: @red; // << ??
+@syntax-quote-color: @yellow; // << ??
+@syntax-raw-syntax-inline-color: @cyan; // << ??
+@syntax-source-gfm_syntax-markup-color: @gold; // << ??
