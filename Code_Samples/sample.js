@@ -50,3 +50,13 @@ var books = {
 
 console.log(books.book_1.title)
 console.log(books.book_2.pages)
+
+const PERSON = "Is a person";
+const ESCAPE = "An escaped character! -> \\ \' \n";
+
+
+
+function greeting(x){
+  console.log("Hello " + x);
+}
+greeting(John);
